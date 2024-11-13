@@ -1,0 +1,10 @@
+const parent=document.getElementById("root");
+const element=React.createElement("h1",{},"This is new heading");
+const element1=React.createElement("h2",{},"Shopping Cart");
+const element2=React.createElement("li",{},"Item-1");
+const element3=React.createElement("li",{},"Item-2");
+const list=React.createElement("ul",{},element2,element3);
+const para=<p>This is para</p>;
+const root = ReactDOM.createRoot(parent);
+      // root.render(element);
+      root.render([element,element1,list,para]);
