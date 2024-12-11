@@ -7,6 +7,8 @@ const Home=()=>{
             <li><Link to="/counter">Counter App</Link></li>
             <li><Link to="/stopwatch">StopWatch App</Link></li>
             <li><Link to="/refEx">RefEx App</Link></li>
+            <li><Link to="/contex">Context Props App</Link></li>
+            <li><Link to="/reducer">Reducer App</Link></li>
           </ul>
         </div>
     )

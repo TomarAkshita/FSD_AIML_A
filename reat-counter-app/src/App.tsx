@@ -3,6 +3,8 @@ import Counter  from './component/counter'
 import Stopwatch from './component/stopwatch'
 import Home from './component/home'
 import RefEx from './component/relex'
+import Parent from './component/Parent'
+import Reducer from './component/reducer'
 const App=()=>{
  return(
   <div>
@@ -11,6 +13,8 @@ const App=()=>{
       <Route path="/counter" element={<Counter/>}></Route>
       <Route path="/stopwatch" element={<Stopwatch/>}></Route>
       <Route path="/refEx" element={<RefEx/>}></Route>
+      <Route path="/contex" element={<Parent/>}></Route>
+      <Route path="/reducer" element={<Reducer/>}></Route>
       <Route path="*" element={<h1>No Page Available</h1>}></Route>
     </Routes>
   </div>
