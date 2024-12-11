@@ -1,17 +1,23 @@
 import {useRef, useState} from 'react'
 const RefEx=()=>{
-    const cnt=useRef(0);
-    const [cnt1,setcnt1]=useState(0);
     console.log("Object Rendered");
-    function Incre(){
-        cnt.current++;
+    let a=5;
+    const refcnt=useRef(0);
+    const [cnt1,setcnt1] = useState(0);
+    function handleIncre(){
+        refcnt.current++;
         setcnt1(cnt1+1);
+        console.log("refCount"+refcnt.current);
+        if(refcnt.current==5){
+            alert("refcount="+refcnt.current);
+        }
     }
     return(
         <div>
-            <h1>Ref Counter: {cnt.current}</h1>
-            <h1>Use Counter: {cnt1}</h1>
-            <button onClick={Incre}>Increment</button>
+            <h1>useRef Example</h1>
+            <h1>refCount={refcnt.current}</h1>
+            <h1>value={cnt1}</h1>
+            <button onClick={handleIncre}>Increment</button>
         </div>
     )
 }
